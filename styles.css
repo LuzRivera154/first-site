@@ -15,16 +15,21 @@ body {
 }
 
 .film {
-    display: flex;
     padding: 40px 20px;
-    align-items: center;
-    flex-wrap: wrap;
+    border-color: antiquewhite;
+    border-width: 20px;
+}
+h3{
+    margin:10px 0;
+}
+h2{
+    margin: 10px 0;
 }
 
 .film_sinopsis {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 img {
@@ -32,8 +37,13 @@ img {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  flex-grow: 1;
 }
 
 p {
-  flex: 4;
+    height: 400px;
+    width: auto;
+   flex-grow: 8;
+}
+  /*width: 450px;
 }
