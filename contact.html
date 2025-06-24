@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <style>
+        body{
+            background: rgb(119, 29, 29);
+            color: rgb(73, 17, 17);
+        }
+        .formulario{
+            background: rgb(231, 199, 199);;
+            margin: 50px 32%;
+            padding: 20px;
+            border: 2px groove rgb(112, 25, 112);
+            border-radius: 5px;
+            width: 450px;
+            height: 500px;
+        }
+        form{
+            padding: 20px 40px;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px 0;
+        }
+        #name,
+        #email{
+            width: 350px;
+            height: 25px;
+        }
+        #texto{
+            width: 350px;
+            height: 200px;
+        }
+        .btn_container{
+        margin: 20px 140px;
+        }
+        #btn{
+            font-size: 15px;
+            width: 70px;
+            height: 40px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="">
-       <label for="name">Nombre</label> <input type="text"  id="name" maxlength="15" required>
-        <label for="email">Email</label><input type="email" required>
-        <label for="texto"> Mensaje</label><textarea name="texto" id="texto"></textarea>
-        <input type="submit" value="">
-    </form>
+    <div class="formulario">
+
+        <form action="">
+            <label for="name">Nombre</label> <br> <input type="text" id="name" maxlength="15" required> <br>
+            <label for="email">Email</label> <br> <input type="email" id="email" required> <br>
+            <label for="texto"> Mensaje</label> <br><textarea name="texto" id="texto"></textarea> <br>
+            <div class="btn_container"> 
+                <input type="button" id="btn" value="Enviar">
+
+            </div>
+        </form>
+    </div>
+
 </body>
+
 </html>
